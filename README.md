@@ -1,2 +1,2 @@
 # Techdegree-Project-2
- Mobilefirst Responsive Layout Project
+ Mobile-first Responsive Layout Project
