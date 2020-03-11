@@ -1,0 +1,106 @@
+/* Global Layout Set-up */
+* {
+ 	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: #222;
+	/* Cambridge Blue */
+	background: #9DC5BB;
+}
+
+header,
+section {
+	padding: 0 0.625em 2.5em;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', Arial, sans-serif;
+}
+h1 {
+	line-height: 1.2;
+}
+h2 {
+	margin: 0;
+	padding: 2.5em 0;
+	line-height: 1.3;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+h3 {
+	line-height: 1.4;
+}
+
+p {
+	line-height: 1.5;
+}
+
+/* Link Styles */
+a:link {
+	/* Dark Slate Gray */
+	color: #1C5253;
+	font-weight: 700;
+}
+a:focus, a:hover {
+ 	text-decoration: none;
+}
+a:visited {
+	/* Maastricht Blue */
+	color: #121640;
+}
+
+/* Layout Styles */
+img {
+	display: block;
+	max-width: 100%;
+}
+
+nav ul {
+	margin: 1em 0 1.5em;
+	padding: 0;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+}
+nav li {
+	margin-bottom: 0.5em;
+	padding: 0.5em 0;
+	background: #fff;
+}
+nav li a {
+	text-decoration: none;
+}
+
+header img {
+	max-width: 75%;
+	margin: auto;
+	padding: 1.5em 0;
+}
+
+.portfolio {
+	background-color: #fff;
+}
+.portfolio img {
+	padding-bottom: 1em;
+}
+
+
+/* Media Queries */
+@media (min-width:768px) {
+
+	.clearfix::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width:1024px) {
+
+}
