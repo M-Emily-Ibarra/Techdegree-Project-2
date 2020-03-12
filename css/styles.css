@@ -92,7 +92,7 @@ header img {
 	padding: 1rem 0 0.75rem;
 }
 
-.portfolio {
+.portfolio, .contact {
 	background-color: #fff;
 }
 .portfolio img {
@@ -115,17 +115,29 @@ header img {
 }
 .contact address span {
 	display: inline-block;
+	padding: 0 1rem;
 }
 .contact address span:first-child {
 	padding-bottom: 1rem;
 }
 
-hr {
-	border-top: 1px solid #000;
-	margin: 0 0.625rem;
+.skills p {
+	font-size: 1rem;
+	font-weight: 700;
+}
+.skills ul {
+	list-style-type: none;
+	padding: 0;
+}
+.skills ul li {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	background-color: #fff;
 }
 
 footer {
+	border-top: 1px solid #000;
 	padding: 1.25rem 0.625rem;
 }
 footer p {
