@@ -48,7 +48,7 @@ p {
 }
 
 /* Link Styles */
-a:link {
+a {
 	/* Dark Slate Gray */
 	color: #1C5253;
 	font-weight: 700;
@@ -83,11 +83,13 @@ nav ul {
 }
 nav li {
 	margin-bottom: 0.5rem;
-	padding: 0.5rem 0;
 	background-color: #fff;
 }
-nav li a {
+nav li a, nav li a:visited {
+	display: block;
+	padding: 0.5rem 0;
 	text-decoration: none;
+	color: #000;
 }
 
 .intro img {
@@ -157,12 +159,16 @@ footer p {
 	font-weight: 700;
 	font-size: 0.875rem;
 }
-footer a {
+.back_to_top {
 	float: right;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 0.75rem;
 }
+.back_to_top, .back_to_top:visited {
+	color: #000;
+}
+
 footer ul {
 	display: none;
 }
@@ -176,8 +182,10 @@ footer ul {
 	nav li {
 		float: left;
 		margin: 0;
-		padding: 0 1rem;
 		background-color: #9DC5BB;
+	}
+	nav li a, nav li a:visited {
+		padding: 0.5rem 1rem;
 	}
 
 	header {
@@ -232,12 +240,17 @@ footer ul {
 		float: right;
 		margin: 0;
 		list-style-type: none;
-		font-size: 0.875rem;
+		font-size: 0.75rem;
 		font-weight: 700;
+		text-transform: uppercase;
 	}
 	footer li {
 		float: left;
 		padding-left: 1.5rem;
+	}
+	footer li a, footer li a:visited {
+		color: #000;
+		text-decoration: none;
 	}
 }
 
@@ -248,11 +261,11 @@ footer ul {
 	header h1 {
 		float: left;
 		margin: 0;
+		line-height: 1.35;
 	}
 	nav {
 		float: right;
-		line-height: 1.15;
-		padding: 4.5px 0;
+		line-height: 1;
 	}
 	nav ul {
 		margin: 0;
@@ -279,7 +292,6 @@ footer ul {
 		min-height: 370px;
 		padding: 0 0.5rem;
 	}
-
 	.contact p {
 		max-width: 50%;
 		margin: 0 auto 1rem;
