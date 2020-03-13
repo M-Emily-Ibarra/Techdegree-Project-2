@@ -1,6 +1,9 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* Global Layout Set-up */
 * {
- 	box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	        box-sizing: border-box;
 }
 
 body {
@@ -25,6 +28,7 @@ h1, h2, h3 {
 }
 h1 {
 	line-height: 1.2;
+	font-size: 1.5rem;
 }
 h2 {
 	margin: 0;
@@ -86,7 +90,7 @@ nav li a {
 	text-decoration: none;
 }
 
-header img {
+.intro img {
 	max-width: 75%;
 	margin: auto;
 	padding: 1rem 0 0.75rem;
@@ -134,6 +138,8 @@ header img {
 	padding: 0.5rem 1rem;
 	border-radius: 0.25rem;
 	background-color: #fff;
+	-webkit-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+	-o-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 	transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 .skills ul li:hover {
@@ -177,7 +183,7 @@ footer ul {
 	header {
 		padding: 1.5rem 1.5rem 3.5rem;
 	}
-	header p {
+	.intro p {
 		float: left;
 		width: 60%;
 		margin: 0;
@@ -185,7 +191,7 @@ footer ul {
 		text-align: left;
 		font-size: 1.125rem;
 	}
-	header img {
+	.intro img {
 		float: right;
 		width: 40%;
 		padding: 0;
@@ -199,7 +205,8 @@ footer ul {
 		min-height: 390px;
 		float: left;
 		padding: 0 0.25rem;
-		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 	}
 	.portfolio p {
 		max-width: 260px;
@@ -232,11 +239,53 @@ footer ul {
 		float: left;
 		padding-left: 1.5rem;
 	}
-
-
-
 }
 
 @media (min-width:1024px) {
+	header {
+		padding: 3rem 2rem;
+	}
+	header h1 {
+		float: left;
+		margin: 0;
+	}
+	nav {
+		float: right;
+		line-height: 1.15;
+		padding: 4.5px 0;
+	}
+	nav ul {
+		margin: 0;
+	}
+	.intro {
+		padding-top: 2.5rem;
+	}
+	.intro p, .intro img {
+		width: 50%;
+	}
+	.intro img {
+		padding: 0 1rem;
+	}
+	h2 {
+		padding: 3rem 0 2rem;
+	}
 
+	.portfolio {
+		margin: 0 1rem;
+		padding: 0 1rem 1rem;
+	}
+	.portfolio article {
+		width: 33.333%;
+		min-height: 370px;
+		padding: 0 0.5rem;
+	}
+
+	.contact p {
+		max-width: 50%;
+		margin: 0 auto 1rem;
+	}
+
+	footer {
+		padding: 1.5rem 2rem;
+	}
 }
