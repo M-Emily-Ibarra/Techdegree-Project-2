@@ -236,25 +236,20 @@ footer ul {
 		display: none;
 	}
 	footer ul {
-		display: inline-block;
 		float: right;
 		margin: 0;
-		list-style-type: none;
 		font-size: 0.75rem;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
-	footer li {
-		float: left;
-		padding-left: 1.5rem;
 	}
 	footer li a, footer li a:visited {
-		color: #000;
-		text-decoration: none;
+		padding: 2px 1rem;
 	}
 }
 
 @media (min-width:1024px) {
+    .wrapper {
+        max-width: 1024px;
+        margin: auto;
+    }
 	header {
 		padding: 3rem 2rem;
 	}
@@ -263,11 +258,11 @@ footer ul {
 		margin: 0;
 		line-height: 1.35;
 	}
-	nav {
+	header nav {
 		float: right;
 		line-height: 1;
 	}
-	nav ul {
+	header nav ul {
 		margin: 0;
 	}
 	.intro {
